@@ -1,16 +1,19 @@
 print('Gerador de PA')
 print('-='*10)
-t = int(input('Primeiro Termo: '))
-r = int(input('Razão da PA: '))
-term = t
+primeiro = int(input('Primeiro Termo: '))
+razão = int(input('Razão da PA: '))
+termo = primeiro
 cont = 1
+total = 0
+mais = 10
 while mais != 0:
-    while cont <= 10:
-        print(f'{term} ->', end=' ')
-        term += r
+    total = total + mais
+    while cont <= total:
+        print(f'{termo} ->', end=' ')
+        termo += razão
         cont += 1
     print('PAUSA')
-    mais = int(input(f'Quantos termos vocÇe quer a mais? '))
-print('FIM')
+    mais = int(input(f'Quantos termos voçê quer a mais? '))
+print(f'Progreção finalizada com {total} termos mostrados.')
 
 
