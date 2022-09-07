@@ -1,20 +1,14 @@
-def aumentar(preço, taxa):
-    res = preço + (preço * taxa / 100)
+def metade(preço=0):
+    res = preço / 2
     return res
 
 
-def diminuir(preço, taxa):
-    res = preço - (preço * taxa / 100)
-    return res
-
-
-def dobro(preço):
+def dobro(preço=0):
     res = preço * 2
     return res
 
 
-def metade(preço):
-    res = preço / 2
+def aumento(preço=0, taxa=0):
+    res = preço + (preço * taxa / 100)
     return res
-
 
